@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <title>Bootstrap Template</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link type="text/css" rel="stylesheet" href="cssantras.css"/>
+  </head>
+   <style>     
+</style>
+  <body>
+    
+    
+<div class="container">
+<div class="row">
+            
+<div class=" dropdown hidden-lg hidden-md hidden-sm col-xs-12">
+  <button class="dropbtn glyphicon glyphicon-th-list">    Dropdown   </button>
+  <div class="dropdown-content ">
+    <ul class="topnav">                  
+<li><a class="active" href="#home"><span class="glyphicon glyphicon-home "></span> Pirma galerija </a></li>
+<li><a href="2lab2.html"><span class="glyphicon glyphicon-envelope " aria-hidden="true"></span> Antra galerija</a></li>
+<li><a href="2lab3.html"><span class="glyphicon glyphicon-user " aria-hidden="true"></span> Trečia galerija</a></li>
+<li><a  href="2lab4.html"><span class="glyphicon glyphicon-user hidden-md" aria-hidden="true"></span> Scroll down</a></li> 
+</ul>    
+</div>
+                                      
+</div>
+            
+            
+			<div id="pirmas" class="hidden-xs hidden-sm hidden-md col-lg-12 navbar-fixed-top" style="background-color: #b30000;">
+				 <ul class="topnav">            
+<li><a class="active" href="#home"><span class="glyphicon glyphicon-home hidden-md"></span> Pirma galerija </a></li>
+<li><a href="2lab2.html"><span class="glyphicon glyphicon-envelope hidden-md" aria-hidden="true"></span> Antra galerija</a></li>
+<li><a href="2lab3.html"><span class="glyphicon glyphicon-user hidden-md" aria-hidden="true"></span> Trečia galerija</a></li>
+<li><a  href="2lab4.html"><span class="glyphicon glyphicon-user hidden-md" aria-hidden="true"></span> Scroll down</a></li> 
+</ul>    
+</div>
+
+        <div id="pirmas" class="col-sm-3 navbar-fixed-top hidden-lg col-md-2 hidden-xs" style="background-color: #b30000;">
+                <ul class="top nav  nav-stacked">
+<li><a class="active" href="#home"><span class="glyphicon glyphicon-home hidden-sm "></span> Pirma galerija </a></li>
+<li><a href="2lab2.html"><span class="glyphicon glyphicon-envelope hidden-sm" aria-hidden="true"></span> Antra galerija</a></li>
+<li><a href="2lab3.html"><span class="glyphicon glyphicon-user hidden-sm" aria-hidden="true"></span> Trečia galerija</a></li>
+<li><a  href="2lab4.html"><span class="glyphicon glyphicon-user hidden-md" aria-hidden="true"></span> Scroll down</a></li> 
+</ul>                      
+</div>
+            
+       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10" style="background-color:black; color:white">
+<br>
+<br>
+ <br>
+<br>
+<img class="mySlides" id="pirma"  src="1.jpg" >
+<img class="mySlides" id="pirma" src="2.jpg" >
+<img class="mySlides"id="pirma"  src="3.jpg" >
+           <img class="mySlides"id="pirma"  src="4.jpg" >
+
+<button class="w3-button w3-display-left" id="btn1" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right" id="btn2" onclick="plusDivs(+1)">&#10095;</button>
+        </div>  
+		</div>
+	    </div>
+      
+    <script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+showDivs(slideIndex += n);}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  }
+    x[slideIndex-1].style.display = "block"; }
+        
+      </script>
+    
+  </body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <title>Bootstrap Template</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link type="text/css" rel="stylesheet" href="cssantras.css"/>
+  </head>
+   <style>     
+</style>
+    
+    
+  <body>
+    
+
+  <div class="container">
+<div class="row">
+            
+                  <div class=" dropdown hidden-lg hidden-md hidden-sm col-xs-12">
+<button class="dropbtn glyphicon glyphicon-th-list">    Dropdown   </button>
+<div class="dropdown-content ">
+<ul class="topnav">
+                    
+<li><a href="2lab.html" ><span class="glyphicon glyphicon-home "></span> Pirma galerija </a></li>
+<li><a  href="2lab2.html"><span class="glyphicon glyphicon-envelope " aria-hidden="true"></span> Antra galerija</a></li>
+<li><a class="active" href="#trecias"><span class="glyphicon glyphicon-user " aria-hidden="true"></span> Trečia galerija</a></li>
+<li><a  href="2lab4.html"><span class="glyphicon glyphicon-user hidden-md" aria-hidden="true"></span> Scroll down</a></li> 
+</ul>    
+</div>                                    
+</div>
+            
+        
+<div id="pirmas" class="hidden-xs hidden-sm hidden-md col-lg-12 navbar-fixed-top" style="background-color: #b30000;">
+<ul class="topnav">
+                    
+<li><a href="2lab.html"><span class="glyphicon glyphicon-home hidden-md"></span> Pirma galerija </a></li>
+<li><a href="2lab2.html" href="#antras"><span class="glyphicon glyphicon-envelope hidden-md" aria-hidden="true"></span> Antra galerija</a></li>
+<li><a class="active" href="#trecias"><span class="glyphicon glyphicon-user hidden-md" aria-hidden="true"></span> Trečia galerija</a></li>
+<li><a  href="2lab4.html"><span class="glyphicon glyphicon-user hidden-md" aria-hidden="true"></span> Scroll down</a></li> 
+</ul>    
+</div>
+            
+<div id="pirmas" class="col-sm-3 navbar-fixed-top hidden-lg col-md-2 hidden-xs" style="background-color: #b30000;">
+<ul class="top nav  nav-stacked">
+<li><a href="2lab.html"><span class="glyphicon glyphicon-home hidden-sm "></span> Pirma galerija </a></li>
+<li><a href="2lab2.html" ><span class="glyphicon glyphicon-envelope hidden-sm" aria-hidden="true"></span> Antra galerija</a></li>
+<li><a class="active" href="#trecias"><span class="glyphicon glyphicon-user hidden-sm" aria-hidden="true"></span> Trečia galerija</a></li>
+<li><a  href="2lab4.html"><span class="glyphicon glyphicon-user hidden-md" aria-hidden="true"></span> Scroll down</a></li> 
+ </ul>                      
+</div>
+            
+       
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="carousel" >
+        <br>
+         <br>
+<figure id="spinner">
+    <br>
+    <br>
+    <img src="1.jpg" alt>
+    <img src="2.jpg" alt>
+    <img src="3.jpg" alt>
+    <img src="4.jpg" alt>
+    <img src="5.jpg" alt>
+    <img src="6.jpg" alt>
+    <img src="7.jpg" alt>
+    <img src="8.jpg" alt>
+     <img src="3.jpg" alt>
+  </figure>
+</div>
+<span style="float:left" class="ss-icon" onclick="galleryspin('-')">&lt;</span>
+<span style="float:right" class="ss-icon" onclick="galleryspin('')">&gt;</span>
+
+</div>
+</div>
+    
+      <script>
+
+ var angle = 0;
+function galleryspin(sign) { 
+spinner = document.querySelector("#spinner");
+if (!sign) { angle = angle + 45; } else { angle = angle - 45; }
+spinner.setAttribute("style","-webkit-transform: rotateY("+ angle +"deg); -moz-transform: rotateY("+ angle +"deg); transform: rotateY("+ angle +"deg);");
+}
+</script>
+
+
+      
+      
+  </body>
+</html>
