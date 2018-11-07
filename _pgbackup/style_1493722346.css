@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+    background-color: #660000;
+}
+#map{
+        height: 300px;
+        width: 100%;
+       }
+h5{
+     font-family:verdana;
+    color:white;
+}
+
+.stilius{
+    height: 250px;
+    width: 820px;
+    float: left;
+}
+.renginiai{
+    height:400px;
+    width: 300px;
+    float: right;
+}
+    
+      
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.topnav li {
+    float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+     margin: 5   ;
+}
+
+ul.topnav li a:hover:not(.active) {
+    background-color:  #b30000;}
+
+ul.topnav li a.active {
+    background-color: #b30000;}
+
+ul.topnav li.right {
+    float: right;}
+        
+h1{
+    text-align: center;
+}
+        
+h2{
+    text-align: center;
+}
+        
+h4{
+    text-align: center;
+}
+
+ul.top {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.top li {
+    float: left;}
+
+ul.top li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+     margin: 5   ;
+}
+
+ul.top li a:hover:not(.active) {
+    background-color:  #b30000;}
+
+ul.top li a.active {
+    background-color:  #b30000;}
+
+ul.top li.right {
+    float: right;}
+        
+p{
+    font-family:verdana;
+}
+ 
