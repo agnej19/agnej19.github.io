@@ -22,7 +22,7 @@
     
     
   <div>
-        <h2>Enter number (1-10) and see a miracle </h2>
+        <h2>Enter number (1-30) and see a miracle </h2>
         <hr>
   <input type="text" name="pic" id="pic_name">
   <button onclick="myFunction()">Try it</button>
@@ -37,14 +37,14 @@ function myFunction() {
     //document.write("img src="'/photos/'+x+".jpg");
    //document.getElementById("myImg").src = "'./photos/'+ x + '.jpg'";
 
-  if (x<=10){
+  if (x<=30){
       
 document.getElementById("myImg").src = "./photos/"+x+".jpg";
 document.getElementById("myImg").width = "300";
 //document.getElementById("myImg").height = "500";
     }
     else{
-        document.write("Error \n Right now we have 10photos");
+        document.write("Error \n Right now we have 30photos");
           
     } 
 }
