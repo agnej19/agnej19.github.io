@@ -7,19 +7,48 @@
   
     <title>Bootstrap Template</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-      <link type="text/css" rel="stylesheet" href="style.css"/>
+   
   </head>
-   <style>     
+   <style> 
+       form{
+           margin-left: 10%;
+            margin-top: 5%;
+           
+       }
 </style>
     
     
   <body>
     
     
-    <form action="/action_page.php">
-  <input type="file" name="pic" accept="file_extension">
-  <input type="submit">
+    <form action="#">
+        <h2>Enter number (1-10) and see a miracle </h2>
+        <hr>
+  <input type="text" name="pic" id="pic_name">
+  <button onclick="myFunction()">Try it</button>
+    <img id="myImg" src="#" width="0" height="0" >
 </form> 
 	
+ 
+      <script>
+function myFunction() {
+    var x = document.getElementById("pic_name").value;
+     console.log(x);
+    //document.write("img src="'/photos/'+x+".jpg");
+   //document.getElementById("myImg").src = "'./photos/'+ x + '.jpg'";
+
+  if (x<=10){
+      
+document.getElementById("myImg").src = "./photos/"+x+".jpg";
+document.getElementById("myImg").width = "300";
+document.getElementById("myImg").height = "300";
+    }
+    else{
+        document.write("Error/br Right now we have 10photos");
+           document.write("Error");
+    } 
+}
+</script>
+
   </body>
 </html>
