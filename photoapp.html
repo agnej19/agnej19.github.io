@@ -24,7 +24,6 @@
   <div>
         <h2>Enter number (1-30) and see a miracle </h2>
         <hr>
-        <input type="text" name="dir" id="directory_name" placeholder="Enter directory"> <br>
   <input type="text" name="pic" id="pic_name" placeholder="Enter pic name">
  
   <button onclick="myFunction()">Try it</button>
@@ -36,24 +35,24 @@
 function myFunction() {
     var x = document.getElementById("pic_name").value;
      console.log(x);
-     var y=document.getElementById("directory_name").value;
-    console.log(y);
-     filter = y.value.toUpperCase();
-    //document.write("img src="'/photos/'+x+".jpg");
-   //document.getElementById("myImg").src = "'./photos/'+ x + '.jpg'";
+    // var y=document.getElementById("directory_name").value;
+   // console.log(y);
+   //  filter = y.value.toUpperCase();
+//document.write("img src="'/photos/'+x+".jpg");
+//document.getElementById("myImg").src = "'./photos/'+ x + '.jpg'";
 
- // if (x<=30){
+ if (x<=30){
       
-var bandom = document.getElementById("myImg").src = "file://"+ y +"/"+ x +".jpg";
+var bandom = document.getElementById("myImg").src = "./photos/"+x+".jpg";
    // var bandom = document.getElementById("myImg").src = "file://E:/Dalykai/Agne.jpg";
     console.log(bandom);
 document.getElementById("myImg").width = "300";
 //document.getElementById("myImg").height = "500";
-   // }
-    //else{
-    //    document.write("Error \n Right now we have 30photos");
+    }
+else{
+    document.write("Error \n Right now we have 30photos");
           
-   // } 
+ } 
 }
 </script>
 
