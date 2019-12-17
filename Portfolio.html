@@ -105,6 +105,55 @@
 			height:3%; 
            
         }
+        
+        
+/* The grid: Four equal columns that floats next to each other */
+.column {
+    float: left;
+    object-fit: cover;
+
+    width: 20%; 
+    height: 300px;
+    
+
+    padding: 0px;
+}
+
+/* Style the images inside the grid */
+.column img {
+    opacity: 0.8; 
+    cursor: pointer; 
+}
+
+.column img:hover {
+    opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The expanding image container */
+.container {
+    position: relative;
+    
+    display: none;
+    margin-left: 30%;
+}
+
+
+/* Closable button inside the expanded image */
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
 
     </style>
 <body>
@@ -116,10 +165,12 @@
     
     <div id="my_photo" style="margin-top: 80px">
         <img src="pht/IMG_5875.png" height="280" width="580" style="margin-left: 60px;"/>
+         
     </div>
-   
-
     
+   
+    
+
     <div id="text1st">
         <br><br><br><br><br>
         <font face = "Verdana" size = "5" style="margin-left:200px;" > Vilnius "Night life" website</font>
@@ -206,10 +257,47 @@
     </div>
     
     
+    
+       
+    <div class="row">
+        
+  <div class="column">
+    <img src="des/vi.jpg" style="width:100%; height:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="des/du.png" style="width:100%; height:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="des/tr.png"  style="width:100%; height:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="des/ke.jpg" style="width:100%; height:100%" onclick="myFunction(this);">
+  </div>
+        <div class="column">
+    <img src="des/pe.png" style="width:100%; height:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="container" style="width:40%; height:60%">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%; height:100%;  object-fit: cover;">
+  <div id="imgtext"></div>
+</div>
+    
+    
      <footer >
             <div id="foot">
                         <p>&nbsp &nbsp© Agnė Juškaitė, 2019.</p>
             </div>
         </footer>
+    
+    
+<script>
+function myFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    expandImg.src = imgs.src;
+    expandImg.parentElement.style.display = "block";
+}
+</script>
 </body>
 </html>
